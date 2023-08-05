@@ -8,7 +8,7 @@ import { hover } from '@testing-library/user-event/dist/hover';
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
 
-  return <section className=' mx-auto  2xl:w-[90%] xxxl:w-full pb-10  bg-black rounded-[80px]'>
+  return <section className=' mx-auto  2xl:w-[80%] xxxl:w-[95%] w-[80%] pb-10  bg-black rounded-[80px]'>
     <div className=''>
       <div className='flex flex-col justify-center p-8  border-white '>
         {/* first */}
@@ -20,7 +20,7 @@ const[isHovering,setHovering] = useState(false)
           </p>
         </div>
         {/* second */}
-        <div className='flex flex-col  2xl:flex-row py-16 2xl:justify-center justify-between space-y-10 2xl:space-x-20  items-center text-center border-b-2 border-gray-700'>
+        <div className='flex flex-col  2xl:flex-row py-16 2xl:justify-center justify-between p-5 space-y-10 2xl:space-x-20  items-center text-center border-b-2 border-gray-700'>
           {/* first card */}
           <div className='p-4 group bg-secondary mx-2 rounded-[80px] flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card1'>
             <div className='px-6 justify-center '>

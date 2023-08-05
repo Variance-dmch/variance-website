@@ -7,7 +7,7 @@ const Work = () => {
   return (
     <section className=" mx-auto w-[80%] p-8">
       <div>
-        <div className="flex xl:flex-row flex-col w-full space-x-[200px] justify-center  border-2 ">
+        <div className="flex xl:flex-row flex-col w-full space-x-[200px] justify-center   ">
           {/* first */}
           <div className="flex justify-start flex-col items-start space-y-6 xl:pb-64  pb-1">
             {/* card1 */}
