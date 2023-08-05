@@ -15,7 +15,10 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '960px',
-      xl: '1200px',
+      xl: '1250px',
+      xxl:'2450px',
+      xxxl:'2000px'
+
     },
     extend: {
       // theme:{
@@ -26,7 +29,7 @@ module.exports = {
       //   }
       // },
       screens:{
-        '4xl':'3000px',
+        '2xl':'1600px',
 
       },
       theme:{
