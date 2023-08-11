@@ -77,4 +77,10 @@
   .card-mid{
     @apply font-[500] font-primary text-[18px] leading-[22px] text-secondary_2 text-start
   }
+  .work-head{
+    @apply font-[800] font-primary text-[42px] leading-[48px] text-[#601FEB] text-start tracking-wider
+  }
+  .work-desc{
+    @apply font-[500] font-primary text-[24px] leading-[22px] text-secondary_2 text-start
+  }
 }

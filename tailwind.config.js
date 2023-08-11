@@ -44,6 +44,12 @@ module.exports = {
         site: "url('./assets/site-bg.jpg')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
+        netflix:"url('./assets/netflix.png')",
+        redbull:"url('./assets/redbull.png')",
+        cola:"url('./assets/cola.png')",
+        benz:"url('./assets/benz.png')"
+
+        
       },
       // backgroundColor: theme =>({
       //   ...theme('colors'),
