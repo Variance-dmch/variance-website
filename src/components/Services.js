@@ -8,9 +8,9 @@ import { hover } from '@testing-library/user-event/dist/hover';
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
 
-  return <section className=' mx-auto w-[80%] pb-10 '>
+  return <section className=' mx-auto  2xl:w-[80%] 4xl:w-full pb-10  bg-black rounded-[80px]'>
     <div className=''>
-      <div className='flex flex-col justify-center p-8  border-white rounded-3xl bg-black'>
+      <div className='flex flex-col justify-center p-8  border-white '>
         {/* first */}
         <div className='flex flex-row justify-between text-center border-b-2 border-gray-700 pb-4 pt-6 mx-8'>
           <p className='font-primary  text-[48px]'
@@ -22,7 +22,7 @@ const[isHovering,setHovering] = useState(false)
         {/* second */}
         <div className='flex flex-row py-16 justify-center space-x-20 items-center text-center border-b-2 border-gray-700'>
           {/* first card */}
-          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card1'>
+          <div className='p-4 group bg-secondary mx-2 rounded-[80px] flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card1'>
             <div className='px-6 justify-center '>
               <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
                 <div className='card-head pb-4'>
@@ -52,7 +52,7 @@ const[isHovering,setHovering] = useState(false)
           </div>
 
           {/* second card */}
-          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card2'>
+          <div className='p-4 group bg-secondary mx-2 rounded-[80px] flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card2'>
             <div className='px-6 justify-center '>
               <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
                 <div className='card-head pb-4'>
@@ -83,7 +83,7 @@ const[isHovering,setHovering] = useState(false)
           
 
           {/* third card  */}
-          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card3'>
+          <div className='p-4 group bg-secondary mx-2 rounded-[80px] flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card3'>
             <div className='px-6 justify-center '>
               <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
                 <div className='card-head pb-4'>

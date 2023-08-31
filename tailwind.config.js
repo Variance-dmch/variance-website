@@ -25,6 +25,10 @@ module.exports = {
 
       //   }
       // },
+      screens:{
+        '4xl':'3000px',
+
+      },
       theme:{
         fontFamily: {
           Sans:['Plus Jakarta Sans', 'sans-serif']
@@ -51,11 +55,6 @@ module.exports = {
         app:"url('./assets/app.png')",
         blockchain:"url('./assets/blockchain.png')",
         web:"url('./assets/web.png')",
-
-
-
-
-        
       },
       // backgroundColor: theme =>({
       //   ...theme('colors'),
