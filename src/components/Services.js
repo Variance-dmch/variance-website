@@ -8,7 +8,7 @@ import { hover } from '@testing-library/user-event/dist/hover';
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
 
-  return <section className=' mx-auto w-[80%] pb-10'>
+  return <section className=' mx-auto w-[80%] pb-10 '>
     <div className=''>
       <div className='flex flex-col justify-center p-8  border-white rounded-3xl bg-black'>
         {/* first */}
@@ -29,7 +29,7 @@ const[isHovering,setHovering] = useState(false)
                 Cook <br/> Mobile App
                 
                 </div>
-                <div className='flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
+                <div className='transition-all  duration-300 transform  group-hover:translate-x-4 group-hover:-translate-y-4 flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible  group-hover:invisible'>
                   <BsArrowUpRight className='w-[50px] h-[50px] ' 
                   ></BsArrowUpRight>
                   </div>
@@ -40,8 +40,9 @@ const[isHovering,setHovering] = useState(false)
               </div>
 
             </div>
-            <div className=' relative bg-app bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
-            <div className=' absolute flex items-center justify-center bottom-0 left-0 w-[190px] h-[190px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible'>
+            <div className='transition-all duration-300 relative bg-app bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
+            <div className='  transition-all duration-300 absolute flex items-center justify-center bottom-0 left-0 w-[200px] h-[200px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible
+             transform group-hover:translate-x-4 group-hover:-translate-y-4'>
                   <BsArrowUpRight className='w-[80px] h-[80px] text-[#601FEB]  ' 
                   ></BsArrowUpRight>
                   </div>
@@ -58,7 +59,7 @@ const[isHovering,setHovering] = useState(false)
                 Cook <br/> Blockchain
                 
                 </div>
-                <div className='flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
+                <div className='transition-all  duration-300 transform  group-hover:translate-x-4 group-hover:-translate-y-4 flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
                   <BsArrowUpRight className='w-[50px] h-[50px] ' 
                   ></BsArrowUpRight>
                   </div>
@@ -69,8 +70,9 @@ const[isHovering,setHovering] = useState(false)
               </div>
 
             </div>
-            <div className=' relative bg-blockchain bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
-            <div className=' absolute flex items-center justify-center bottom-0 left-0 w-[190px] h-[190px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible'>
+            <div className='transition-all duration-300 relative bg-blockchain bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
+            <div className='transition-all duration-300 absolute flex items-center justify-center bottom-0 left-0 w-[200px] h-[200px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible
+            transform group-hover:translate-x-4 group-hover:-translate-y-4'>
                   <BsArrowUpRight className='w-[80px] h-[80px] text-[#601FEB] ' 
                   ></BsArrowUpRight>
                   </div>
@@ -81,14 +83,14 @@ const[isHovering,setHovering] = useState(false)
           
 
           {/* third card  */}
-          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card2'>
+          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card3'>
             <div className='px-6 justify-center '>
               <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
                 <div className='card-head pb-4'>
                 Cook <br/> Websites
                 
                 </div>
-                <div className='flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
+                <div className='transition-all  duration-300 transform  group-hover:translate-x-4 group-hover:-translate-y-4 flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
                   <BsArrowUpRight className='w-[50px] h-[50px] ' 
                   ></BsArrowUpRight>
                   </div>
@@ -99,8 +101,9 @@ const[isHovering,setHovering] = useState(false)
               </div>
 
             </div>
-            <div className=' relative bg-web bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
-            <div className=' absolute flex items-center justify-center bottom-0 left-0 w-[190px] h-[190px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible'>
+            <div className='transition-all duration-300 relative bg-web bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
+            <div className='transition-all duration-300 absolute flex items-center justify-center bottom-0 left-0 w-[200px] h-[200px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible
+            transform group-hover:translate-x-4 group-hover:-translate-y-4'>
                   <BsArrowUpRight className='w-[80px] h-[80px]  text-[#601FEB] ' 
                   ></BsArrowUpRight>
                   </div>
