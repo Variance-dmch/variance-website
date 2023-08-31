@@ -47,7 +47,13 @@ module.exports = {
         netflix:"url('./assets/netflix.png')",
         redbull:"url('./assets/redbull.png')",
         cola:"url('./assets/cola.png')",
-        benz:"url('./assets/benz.png')"
+        benz:"url('./assets/benz.png')",
+        app:"url('./assets/app.png')",
+        blockchain:"url('./assets/blockchain.png')",
+        web:"url('./assets/web.png')",
+
+
+
 
         
       },

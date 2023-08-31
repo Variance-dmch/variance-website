@@ -8,9 +8,10 @@ import { hover } from '@testing-library/user-event/dist/hover';
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
 
-  return <section className=' mx-auto w-[80%]'>
+  return <section className=' mx-auto w-[80%] pb-10'>
     <div className=''>
-      <div className='flex flex-col justify-center p-8 border-white rounded-xl bg-black'>
+      <div className='flex flex-col justify-center p-8  border-white rounded-3xl bg-black'>
+        {/* first */}
         <div className='flex flex-row justify-between text-center border-b-2 border-gray-700 pb-4 pt-6 mx-8'>
           <p className='font-primary  text-[48px]'
           >What we offer</p>
@@ -18,16 +19,19 @@ const[isHovering,setHovering] = useState(false)
           based in Washington D.C
           </p>
         </div>
-        <div className='flex flex-row py-16 justify-evenly items-center text-center border-b-2 border-gray-700'>
-          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[250px]' id='card1'>
-            <div className='px-6 '>
-              <div className='p-2 flex flex-row border-b-2 border-secondary_1 space-x-10 justify-between items-start text-white '>
+        {/* second */}
+        <div className='flex flex-row py-16 justify-center space-x-20 items-center text-center border-b-2 border-gray-700'>
+          {/* first card */}
+          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card1'>
+            <div className='px-6 justify-center '>
+              <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
                 <div className='card-head pb-4'>
                 Cook <br/> Mobile App
                 
                 </div>
-                <div className='w-80px h-80px p-4 rounded-full bg-secondary_1 cursor-pointer'>
-                  <BsArrowUpRight/>
+                <div className='flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
+                  <BsArrowUpRight className='w-[50px] h-[50px] ' 
+                  ></BsArrowUpRight>
                   </div>
               </div>
               <div className='p-2 py-4'>
@@ -36,62 +40,27 @@ const[isHovering,setHovering] = useState(false)
               </div>
 
             </div>
-            <div className='group-hover:hidden'>
-                <img className=''
-                src={offer1}
-                />
-              </div>
-              
-                <div className=' hidden group-hover:block'>
-              <img className=''
-                src={offer2after}
-                />
-              </div>
-
-           
-
-          </div>
-          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[250px]' id='card2'>
-            <div className='px-6 '>
-              <div className='p-2 flex flex-row border-b-2 border-secondary_1 space-x-10 justify-between items-start text-white '>
-                <div className='card-head pb-4'>
-                Cook <br/> Websites
-                
-                </div>
-                <div className='w-80px h-80px p-4 rounded-full bg-secondary_1 cursor-pointer'>
-                  <BsArrowUpRight/>
+            <div className=' relative bg-app bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
+            <div className=' absolute flex items-center justify-center bottom-0 left-0 w-[190px] h-[190px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible'>
+                  <BsArrowUpRight className='w-[80px] h-[80px] text-[#601FEB]  ' 
+                  ></BsArrowUpRight>
                   </div>
-              </div>
-              <div className='p-2 py-4'>
-                <p className='card-mid pb-4'>American mass media company based in <br/>
-                   Washington, D.C., and New York City</p>
-              </div>
 
-            </div>
-            <div className='group-hover:hidden'>
-                <img className=''
-                src={offer1}
-                />
               </div>
               
-                <div className=' hidden group-hover:block'>
-              <img className=''
-                src={offer2after}
-                />
-              </div>
-
-           
-
           </div>
-          <div className='p-4 group  bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[250px]' id='card3'>
-            <div className='px-6 '>
-              <div className='p-2 flex flex-row border-b-2 border-secondary_1 space-x-10 justify-between items-start text-white '>
+
+          {/* second card */}
+          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card2'>
+            <div className='px-6 justify-center '>
+              <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
                 <div className='card-head pb-4'>
                 Cook <br/> Blockchain
                 
                 </div>
-                <div className='w-80px h-80px p-4 rounded-full bg-secondary_1 cursor-pointer'>
-                  <BsArrowUpRight/>
+                <div className='flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
+                  <BsArrowUpRight className='w-[50px] h-[50px] ' 
+                  ></BsArrowUpRight>
                   </div>
               </div>
               <div className='p-2 py-4'>
@@ -100,29 +69,49 @@ const[isHovering,setHovering] = useState(false)
               </div>
 
             </div>
-               <div className='group-hover:hidden'>
-                <img className=''
-                src={offer1}
-                />
+            <div className=' relative bg-blockchain bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
+            <div className=' absolute flex items-center justify-center bottom-0 left-0 w-[190px] h-[190px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible'>
+                  <BsArrowUpRight className='w-[80px] h-[80px] text-[#601FEB] ' 
+                  ></BsArrowUpRight>
+                  </div>
+
               </div>
               
-                <div className='  flex-row hidden group-hover:block'>
-                  {/* <div className='block justify-start items-end w-128px h-128px rounded-full bg-[#B9E901]'>
-                    <BsArrowUpRight/>
-                  </div> */}
-                  <div>
-              <img className=''
-                src={offer2after}
-                />
+          </div>
+          
+
+          {/* third card  */}
+          <div className='p-4 group bg-secondary mx-2 rounded-3xl flex flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card2'>
+            <div className='px-6 justify-center '>
+              <div className='p-2 flex flex-row border-b-2 border-secondary_1 justify-between items-start text-white py-8'>
+                <div className='card-head pb-4'>
+                Cook <br/> Websites
+                
+                </div>
+                <div className='flex items-center justify-center w-[120px] h-[120px] p-4 rounded-full bg-secondary_1 cursor-pointer visible group-hover:invisible'>
+                  <BsArrowUpRight className='w-[50px] h-[50px] ' 
+                  ></BsArrowUpRight>
                   </div>
               </div>
+              <div className='p-2 py-4'>
+                <p className='card-mid pb-4'>American mass media company based in <br/>
+                   Washington, D.C., and New York City</p>
+              </div>
 
-           
+            </div>
+            <div className=' relative bg-web bg-center bg-cover bg-no-repeat px-[350px] py-[225px] rounded-[80px] group-hover:rounded-bl-[275px] saturate-0 group-hover:saturate-200'>
+            <div className=' absolute flex items-center justify-center bottom-0 left-0 w-[190px] h-[190px] p-4 rounded-full bg-[#B9E901] border-[20px] border-black cursor-pointer invisible group-hover:visible'>
+                  <BsArrowUpRight className='w-[80px] h-[80px]  text-[#601FEB] ' 
+                  ></BsArrowUpRight>
+                  </div>
 
+              </div>
+              
           </div>
 
   
         </div>
+        {/* third */}
         <div className='flex flex-row  py-10 justify-evenly text-center border-b-2 border-gray-700'>
           <div className=' flex p-4 items-end'>
             <p className='font-[800] font-primary text-[80px] leading-tight text-[#B9E901] text-start tracking-normal uppercase'>
