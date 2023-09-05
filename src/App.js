@@ -9,8 +9,11 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 
 const App = () => {
+  <script src="http://localhost:8097"></script>
+
   return (
-    <div className='bg-gray-300 bg-no-repeat bg-cover overflow-hidden'>
+    
+    <div className='bg-gray-300 bg-no-repeat bg-cover overflow-hidden scale-100'>
       <Header />
       <Banner />
       <Nav />
