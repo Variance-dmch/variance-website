@@ -59,6 +59,7 @@ module.exports = {
         app:"url('./assets/app.png')",
         blockchain:"url('./assets/blockchain.png')",
         web:"url('./assets/web.png')",
+        logo:"url(./assets/logo.svg)",
       },
       // backgroundColor: theme =>({
       //   ...theme('colors'),
