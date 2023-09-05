@@ -1,5 +1,4 @@
 import React from 'react';
-import {offer2} from '../assets/offer2.svg'
 import {BsArrowUpRight} from 'react-icons/bs'
 
 

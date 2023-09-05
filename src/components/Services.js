@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import {BsArrowUpRight} from 'react-icons/bs'
-import offer1 from '../assets/offer1.svg'
-import offer2 from '../assets/offer2.svg'
-import offer2after from '../assets/offer2after.svg'
-import { hover } from '@testing-library/user-event/dist/hover';
 
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
