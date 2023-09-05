@@ -5,7 +5,7 @@ import {BsArrowUpRight} from 'react-icons/bs'
 
 const Work = () => {
   return (
-    <section className=" mx-auto w-[80%] p-8 scale-75">
+    <section className=" mx-auto w-[80%] p-8 scale-75" id='work'>
       <div>
         <div className="flex xl:flex-row flex-col w-full space-x-[200px] justify-center   ">
           {/* first */}

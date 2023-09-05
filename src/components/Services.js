@@ -8,7 +8,7 @@ import { hover } from '@testing-library/user-event/dist/hover';
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
 
-  return <section className=' mx-auto  xl1:w-[95%] xxxl:w-[95%] w-[80%] pb-10  bg-black rounded-[80px] overflow-x-auto '>
+  return <section className='  mx-auto  xl1:w-[95%] xxxl:w-[95%] w-[80%] pb-10  bg-black rounded-[80px] overflow-x-auto '  id='services'>
     <div className=''>
       <div className='flex flex-col justify-center p-8  border-white  '>
         {/* first */}
@@ -117,7 +117,7 @@ const[isHovering,setHovering] = useState(false)
         {/* third */}
         <div className='pt-4 scale-[100%]'>
         <div className='flex flex-row  py-10 justify-evenly text-center border-b-2 border-gray-700 mt-4'>
-          <div className=' flex p-4 items-end'>
+          <div className=' flex p-4 items-end scale-[59%]'>
             <p className='font-[800] font-primary text-[80px] leading-tight text-[#B9E901] text-start tracking-normal uppercase'>
             American mass <br/>media company<br/> 
             based in<br/>

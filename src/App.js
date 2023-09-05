@@ -13,7 +13,8 @@ const App = () => {
 
   return (
     
-    <div className='bg-gray-300 bg-no-repeat bg-cover overflow-hidden scale-100'>
+    <div className='bg-gray-300 bg-no-repeat bg-cover overflow-hidden scale-100 relative'>
+          <Nav/>
       {/* <Header /> */}
       <Banner />
       {/* <Nav /> */}
