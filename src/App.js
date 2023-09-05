@@ -13,14 +13,15 @@ const App = () => {
 
   return (
     
-    <div className='bg-gray-300 bg-no-repeat bg-cover overflow-hidden scale-100'>
-      <Header />
+    <div className='bg-gray-300 bg-no-repeat bg-cover overflow-hidden scale-100 relative'>
+          <Nav/>
+      {/* <Header /> */}
       <Banner />
-      <Nav />
-      <About />
+      {/* <Nav /> */}
+      {/* <About /> */}
       <Services />
       <Work />
-      <Contact />
+      {/* <Contact /> */}
       {/* <div className='h-[4000px]'></div> */}
     </div>
   );
