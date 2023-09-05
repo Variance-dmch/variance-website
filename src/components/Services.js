@@ -8,11 +8,11 @@ import { hover } from '@testing-library/user-event/dist/hover';
 const Services = () => {
 const[isHovering,setHovering] = useState(false)
 
-  return <section className=' mx-auto  2xl:w-[80%] xxxl:w-[95%] w-[80%] pb-10  bg-black rounded-[80px] overflow-x-auto '>
+  return <section className=' mx-auto  xl1:w-[95%] xxxl:w-[95%] w-[80%] pb-10  bg-black rounded-[80px] overflow-x-auto '>
     <div className=''>
       <div className='flex flex-col justify-center p-8  border-white  '>
         {/* first */}
-        <div className='flex flex-row justify-between text-center border-b-2 border-gray-700 pb-4 pt-6 mx-8'>
+        <div className='flex flex-row justify-between text-center border-b-2 border-gray-700 pb-4 pt-6 mx-8 -mb-10'>
           <p className='font-primary  text-[48px]'
           >What we offer</p>
           <p className='text-right font-primary text-[#737373] leading-tight pb-4'>American Mass Media Company <br/>
@@ -20,7 +20,7 @@ const[isHovering,setHovering] = useState(false)
           </p>
         </div>
         {/* second */}
-        <div className='flex flex-col  2xl:flex-row py-16 2xl:justify-center justify-between p-5 space-y-10 2xl:space-x-20  items-center text-center border-b-2 border-gray-700'>
+        <div className='flex flex-col  xl1:flex-row py-16 xl1:justify-center justify-between p-5 space-y-10 xl1: space-x-16   items-end text-center border-b-2 border-gray-700 scale-[65%]'>
           {/* first card */}
           <div className=' flex p-4 group bg-secondary mx-2 rounded-[80px]  flex-col justify-start hover:bg-[#601FEB] hover:rounded-bl-[275px]' id='card1'>
             <div className='px-6 justify-center '>
@@ -115,7 +115,8 @@ const[isHovering,setHovering] = useState(false)
   
         </div>
         {/* third */}
-        <div className='flex flex-row  py-10 justify-evenly text-center border-b-2 border-gray-700'>
+        <div className='pt-4 scale-[100%]'>
+        <div className='flex flex-row  py-10 justify-evenly text-center border-b-2 border-gray-700 mt-4'>
           <div className=' flex p-4 items-end'>
             <p className='font-[800] font-primary text-[80px] leading-tight text-[#B9E901] text-start tracking-normal uppercase'>
             American mass <br/>media company<br/> 
@@ -129,6 +130,8 @@ const[isHovering,setHovering] = useState(false)
             American mass media company based in <br/>Washington, D.C., jksaxb qwjhbsd hb<br/> jbhwsqjbs ijqwdh jbwqdb jiwqbdjqwbd ijbwd<br/> jbdqijbd jqwdbiwqbd and New York City
             </p>
           </div>
+        </div>
+
         </div>
 
       </div>
